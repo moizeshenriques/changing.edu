@@ -1,0 +1,27 @@
+.leticia, 
+.madson, 
+.duda, 
+.dani, 
+.sophia, 
+.anaclara, 
+.celena,
+.victor,
+.leticiarebello,
+.san,
+.monica,
+.mariaclara,
+.gyordanne,
+.bela,
+.rafaella {
+    height: 75px;
+}
+
+@media(min-width: 1100px){
+    img.camile {
+        width: 13%;
+    }
+
+    img.mariana {
+        width: 30%;
+    }
+}

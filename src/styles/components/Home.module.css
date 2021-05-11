@@ -1,0 +1,106 @@
+.container {
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container section {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container section.sideLeft {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section.sideRight {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideLeft img {
+    width: 80%;
+}
+
+.sideRight h1 {
+    font-size: 3.7rem;
+    font-family: "Oswald", sans-serif;
+    line-height: 3.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.sideRight .phrases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideRight div h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 2rem;
+}
+
+.sideRight div p {
+    max-width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sideRight a {
+    font-size: 0px;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: filter 0.2s;
+    margin-bottom: 4rem;
+}
+
+.sideRight a:hover {
+    filter: brightness(1.1);
+}
+
+@media(min-width: 1100px){
+    .container {
+        flex-direction: row;
+    }
+
+    .container .phrases {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .sideRight h1 {
+        margin-top: 4rem;
+        text-align: start;
+    }
+
+    .sideRight div p {
+        text-align: start;
+    }
+
+    .container section.sideRight {
+        gap: 6.5rem;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+}
